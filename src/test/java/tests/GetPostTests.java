@@ -28,6 +28,7 @@ public class GetPostTests {
                 .get("/users?page=2")
         .then()
                 .statusCode(200)
+        .and()
                 .body("data[4].first_name", equalTo("George"))
                 .body("data.first_name", hasItems("George", "Rachel"))
                 .body("data.last_name", hasItems("Funke", "Edwards"))
@@ -71,6 +72,7 @@ public class GetPostTests {
                 .get("/users?page=2")
         .then()
                 .statusCode(200)
+        .and()
                 .body("data[0]", hasKey("id"))
                 .body("data[0]", hasKey("email"))
                 .body("data[0]", hasKey("first_name"))
@@ -114,6 +116,9 @@ public class GetPostTests {
                 .post("/users")
         .then()
                 .statusCode(201)
+        .and()
+                .body("name", equalTo("jimmy"))
+                .body("id", matchesPattern("^[0-9]+$"))
                 .log().all();
     }
 
@@ -134,6 +139,10 @@ public class GetPostTests {
                 .post("/users")
         .then()
                 .statusCode(201)
+        .and()
+                .body("name", equalTo("jimmy"))
+                .body("job", equalTo("qa"))
+                .body("id", matchesPattern("^[0-9]+$"))
                 .log().all();
     }
 }
