@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e36b9a4-61c6-4f7b-8e59-8b0eb2e2a0a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/parameters/PUTschema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LocalAPITests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PutPatchDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PutPatchDeleteTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NcyTBg8nkdXQqZcoFiID5d02Py" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -54,11 +55,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/jimmy/OneDrive/Desktop/code/API-Automation-Framework/src/test/resources/data"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.PutPatchDeleteTests.validatePutResponseSchema">
-    <configuration name="GetPostTests.postTest01" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework\src\test\resources\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.LocalAPITests.delete">
+    <configuration name="LocalAPITests.delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -71,7 +78,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.GetPostTests.postTest01&quot;" />
+            <option value="&quot;tests.LocalAPITests.delete&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -81,7 +88,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GetPostTests.postTest02" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LocalAPITests.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -94,7 +101,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.GetPostTests.postTest02&quot;" />
+            <option value="&quot;tests.LocalAPITests.get&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -104,7 +111,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PutPatchDeleteTests.deleteTest01" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LocalAPITests.patch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -117,7 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.PutPatchDeleteTests.deleteTest01&quot;" />
+            <option value="&quot;tests.LocalAPITests.patch&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -127,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PutPatchDeleteTests.putTest01" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LocalAPITests.post" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +147,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.PutPatchDeleteTests.putTest01&quot;" />
+            <option value="&quot;tests.LocalAPITests.post&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,7 +157,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PutPatchDeleteTests.validatePutResponseSchema" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LocalAPITests.put" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -163,7 +170,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.PutPatchDeleteTests.validatePutResponseSchema&quot;" />
+            <option value="&quot;tests.LocalAPITests.put&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PutPatchDeleteTests.validatePutResponseSchema" />
-        <item itemvalue="Gradle.PutPatchDeleteTests.putTest01" />
-        <item itemvalue="Gradle.PutPatchDeleteTests.deleteTest01" />
-        <item itemvalue="Gradle.GetPostTests.postTest02" />
-        <item itemvalue="Gradle.GetPostTests.postTest01" />
+        <item itemvalue="Gradle.LocalAPITests.delete" />
+        <item itemvalue="Gradle.LocalAPITests.post" />
+        <item itemvalue="Gradle.LocalAPITests.patch" />
+        <item itemvalue="Gradle.LocalAPITests.put" />
+        <item itemvalue="Gradle.LocalAPITests.get" />
       </list>
     </recent_temporary>
   </component>
