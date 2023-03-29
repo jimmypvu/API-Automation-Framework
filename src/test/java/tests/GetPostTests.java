@@ -52,9 +52,9 @@ public class GetPostTests {
         List<String> emailList = jsp.getList("data.email");
 
         for(String email : emailList){
-            Assert.assertEquals(email.contains("@"), true, "Emails are valid format (contain '@')");
-            Assert.assertEquals(email.indexOf("@"), email.lastIndexOf("@"), "Emails are valid format (contain only 1 '@')");
-            Assert.assertEquals(email.contains("."), true, "Emails are valid format (contain '.')");
+            Assert.assertEquals(email.contains("@"), true, "Email format valid (contain '@')");
+            Assert.assertEquals(email.indexOf("@"), email.lastIndexOf("@"), "Email format valid (contain only 1 '@')");
+            Assert.assertEquals(email.contains("."), true, "Email format valid (contain '.')");
         }
     }
 

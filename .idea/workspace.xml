@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e36b9a4-61c6-4f7b-8e59-8b0eb2e2a0a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SoapXMLRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/XMLSchemaValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/restschema/ReqresCreateUser_POSTschema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/soapschema/CalculatorAdd_POSTschema.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soapXMLs/Add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soapXMLs/Add_POST.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/JSONSchemaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/JSONSchemaValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SoapXMLRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SoapXMLRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/GETschema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/restschema/ReqresListUsers_GETschema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/PUTschema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/restschema/ReqresUpdateUser_PUTschema.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +63,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/jimmy/OneDrive/Desktop/code/API-Automation-Framework/src/test/resources/data"
+    "last_opened_file_path": "C:/Users/jimmy/OneDrive/Desktop/code/API-Automation-Framework/src/test/resources/data",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -64,10 +72,12 @@
       <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework\src\test\resources\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework\src\test\resources\testdata\soapschema" />
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework\src\test\resources\testdata\restschema" />
       <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SoapXMLRequests.validateSoapXML">
+  <component name="RunManager" selected="Gradle.XMLSchemaValidator.validatePostSchema">
     <configuration name="JSONSchemaValidator.validateGetSchema" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -91,7 +101,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LocalAPITests.delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JSONSchemaValidator.validatePostSchema" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,53 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LocalAPITests.delete&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LocalAPITests.patch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LocalAPITests.patch&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LocalAPITests.post" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LocalAPITests.post&quot;" />
+            <option value="&quot;tests.JSONSchemaValidator.validatePostSchema&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,13 +147,59 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="XMLSchemaValidator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.XMLSchemaValidator&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="XMLSchemaValidator.validatePostSchema" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.XMLSchemaValidator.validatePostSchema&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.XMLSchemaValidator.validatePostSchema" />
         <item itemvalue="Gradle.SoapXMLRequests.validateSoapXML" />
+        <item itemvalue="Gradle.XMLSchemaValidator" />
         <item itemvalue="Gradle.JSONSchemaValidator.validateGetSchema" />
-        <item itemvalue="Gradle.LocalAPITests.delete" />
-        <item itemvalue="Gradle.LocalAPITests.post" />
-        <item itemvalue="Gradle.LocalAPITests.patch" />
+        <item itemvalue="Gradle.JSONSchemaValidator.validatePostSchema" />
       </list>
     </recent_temporary>
   </component>

@@ -11,7 +11,7 @@ import java.io.File;
 import static io.restassured.RestAssured.*;
 
 public class JSONSchemaValidator {
-    private final String BASEURL = "http://reqres.in/api";
+    private final String BASEURL = "https://reqres.in/api";
     @Test
     public void validateGetSchema(){
         baseURI = BASEURL;
@@ -26,7 +26,28 @@ public class JSONSchemaValidator {
         .then()
                 .statusCode(200)
         .and()
-                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/resources/testdata/GETschema.json")))
+                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/resources/testdata/restschema/ReqresListUsers_GETschema.json")))
+                .log().all();
+    }
+
+    @Test
+    public void validatePostSchema(){
+        baseURI = BASEURL;
+
+        JSONObject reqBody = new JSONObject();
+        reqBody.put("name", "butters");
+        reqBody.put("job", "professor (chaos studies)");
+
+        given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .body(reqBody.toJSONString())
+        .when()
+                .post("/users")
+        .then()
+                .statusCode(201)
+        .and()
+                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/resources/testdata/restschema/ReqresCreateUser_POSTschema.json")))
                 .log().all();
     }
 
@@ -47,7 +68,7 @@ public class JSONSchemaValidator {
         .then()
                 .statusCode(200)
         .and()
-                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/resources/testdata/PUTschema.json")))
+                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/resources/testdata/restschema/ReqresUpdateUser_PUTschema.json")))
                 .log().all();
     }
 }
