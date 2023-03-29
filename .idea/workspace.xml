@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e36b9a4-61c6-4f7b-8e59-8b0eb2e2a0a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JSONSchemaValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/GETschema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/PUTschema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/SoapXMLRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameters/GETschema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parameters/PUTschema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PutPatchDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PutPatchDeleteTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +63,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework\src\test\resources\data" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.JSONSchemaValidator.validateGetSchema">
+  <component name="RunManager" selected="Gradle.SoapXMLRequests.validateSoapXML">
     <configuration name="JSONSchemaValidator.validateGetSchema" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -163,7 +160,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LocalAPITests.put" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SoapXMLRequests.validateSoapXML" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,7 +173,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LocalAPITests.put&quot;" />
+            <option value="&quot;tests.SoapXMLRequests.validateSoapXML&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SoapXMLRequests.validateSoapXML" />
         <item itemvalue="Gradle.JSONSchemaValidator.validateGetSchema" />
         <item itemvalue="Gradle.LocalAPITests.delete" />
         <item itemvalue="Gradle.LocalAPITests.post" />
         <item itemvalue="Gradle.LocalAPITests.patch" />
-        <item itemvalue="Gradle.LocalAPITests.put" />
       </list>
     </recent_temporary>
   </component>
