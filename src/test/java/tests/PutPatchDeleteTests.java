@@ -2,11 +2,9 @@ package tests;
 
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import net.minidev.json.JSONObject;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
@@ -32,27 +30,6 @@ public class PutPatchDeleteTests {
                 .statusCode(200)
         .and()
                 .body("job", equalTo("qa tester"))
-                .log().all();
-    }
-
-    @Test
-    public void validatePutResponseSchema(){
-        baseURI = BASEURL;
-
-        JSONObject reqBody = new JSONObject();
-        reqBody.put("name", "fredward mercury");
-        reqBody.put("job", "astronaut");
-
-        given()
-                .contentType(ContentType.JSON)
-                .accept(ContentType.JSON)
-                .body(reqBody.toJSONString())
-        .when()
-                .put("/users/2")
-        .then()
-                .statusCode(200)
-        .and()
-                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/java/parameters/PUTschema.json")))
                 .log().all();
     }
 

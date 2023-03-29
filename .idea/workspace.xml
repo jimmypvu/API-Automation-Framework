@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e36b9a4-61c6-4f7b-8e59-8b0eb2e2a0a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LocalAPITests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/JSONSchemaValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/GETschema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/PUTschema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameters/GETschema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parameters/PUTschema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/GetPostTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PutPatchDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PutPatchDeleteTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data/db.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +70,30 @@
       <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-Framework\src\test\resources\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LocalAPITests.delete">
+  <component name="RunManager" selected="Gradle.JSONSchemaValidator.validateGetSchema">
+    <configuration name="JSONSchemaValidator.validateGetSchema" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.JSONSchemaValidator.validateGetSchema&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="LocalAPITests.delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -79,29 +108,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.LocalAPITests.delete&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LocalAPITests.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.LocalAPITests.get&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JSONSchemaValidator.validateGetSchema" />
         <item itemvalue="Gradle.LocalAPITests.delete" />
         <item itemvalue="Gradle.LocalAPITests.post" />
         <item itemvalue="Gradle.LocalAPITests.patch" />
         <item itemvalue="Gradle.LocalAPITests.put" />
-        <item itemvalue="Gradle.LocalAPITests.get" />
       </list>
     </recent_temporary>
   </component>

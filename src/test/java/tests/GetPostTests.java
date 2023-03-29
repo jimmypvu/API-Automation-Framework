@@ -1,7 +1,6 @@
 package tests;
 
 import io.restassured.http.ContentType;
-import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
@@ -10,7 +9,6 @@ import net.minidev.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -78,23 +76,6 @@ public class GetPostTests {
                 .body("data[0]", hasKey("first_name"))
                 .body("data[0]", hasKey("last_name"))
                 .body("data[0]", hasKey("avatar"))
-                .log().all();
-    }
-
-    @Test
-    public void validateGetResponseSchema(){
-        baseURI = BASEURL;
-
-        RequestSpecification req = given()
-                                        .header("content-type", "application/json")
-                                        .contentType(ContentType.JSON)
-                                        .accept(ContentType.JSON);
-
-        when()
-                .get("/users?page=2")
-        .then()
-                .assertThat()
-                .body(JsonSchemaValidator.matchesJsonSchema(new File("./src/test/java/parameters/GETschema.json")))
                 .log().all();
     }
 
